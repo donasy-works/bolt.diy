@@ -24,4 +24,8 @@ export default defineConfig({
     }),
     tsconfigPaths(),
   ],
+  // هذا الجزء الجديد لحل مشكلة await
+  build: {
+    target: "esnext",
+  },
 });
